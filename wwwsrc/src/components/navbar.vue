@@ -27,8 +27,8 @@
           :class="{ active: $route.name == 'dashboard' }"
         >
           <router-link class="nav-link" :to="{ name: 'dashboard' }"
-            >My-Dashboard</router-link
-          >
+            ><i class="fas fa-house-user"></i
+          ></router-link>
         </li>
       </ul>
       <span class="navbar-text">

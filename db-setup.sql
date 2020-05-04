@@ -2,7 +2,9 @@
 
 -- CREATE TABLE profile (
 --   userId VARCHAR(255) NOT NULL,
---   name VARCHAR(255) NOT NULL
+--   name VARCHAR(255) NOT NULL,
+--   phoneNumber INT DEFAULT 0,
+--   email VARCHAR(255) NOT NULL
 -- )
 
 -- CREATE TABLE homes (
@@ -47,7 +49,7 @@
 
 
 -- -- USE THIS TO CLEAN OUT YOUR DATABASE
--- DROP TABLE IF EXISTS vaultkeeps;
+-- DROP TABLE IF EXISTS profile;
 -- DROP TABLE IF EXISTS vaults;
 -- DROP TABLE IF EXISTS keeps;
 -- DROP TABLE IF EXISTS users;

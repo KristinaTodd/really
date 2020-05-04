@@ -15,8 +15,8 @@ namespace Really.Controllers
   [Route("api/[controller]")]
   public class ProfileController : ControllerBase
   {
-    private readonly ProfileService _ks;
-    public ProfileController(ProfileService ks)
+    private readonly ProfileService _ps;
+    public ProfileController(ProfileService ps)
     {
       _ps = ps;
     }
@@ -35,13 +35,13 @@ namespace Really.Controllers
 
     [HttpPost]
     [Authorize]
-    public ActionResult<Home> Post([FromBody] Home newHome)
+    public ActionResult<Profile> Post([FromBody] Profile newProfile)
     {
       try
       {
         var userId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
-        newHome.UserId = userId;
-        return Ok(_ps.Create(newHome));
+        newProfile.UserId = userId;
+        return Ok(_ps.Create(newProfile));
       }
       catch (Exception e)
       {

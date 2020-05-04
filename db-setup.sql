@@ -1,6 +1,9 @@
 -- USE really;
 
-
+-- CREATE TABLE profile (
+--   userId VARCHAR(255) NOT NULL,
+--   name VARCHAR(255) NOT NULL
+-- )
 
 -- CREATE TABLE homes (
 --     id int NOT NULL AUTO_INCREMENT,
@@ -14,6 +17,8 @@
 --     INDEX userId (userId),
 --     PRIMARY KEY (id)
 -- );
+
+
 
 -- CREATE TABLE favoriteHome (
 --     id int NOT NULL AUTO_INCREMENT,

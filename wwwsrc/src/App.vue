@@ -15,13 +15,12 @@ export default {
     this.$store.dispatch("setBearer", this.$auth.bearer);
   },
   components: {
-    Navbar
-  }
+    Navbar,
+  },
 };
 </script>
 
 <style lang="scss">
 @import "./assets/_variables.scss";
 @import "bootstrap";
-@import "./assets/_overrides.scss";
 </style>

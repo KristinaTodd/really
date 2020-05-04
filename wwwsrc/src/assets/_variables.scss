@@ -1,10 +1,10 @@
-$body-bg: #bdbd21;
+$body-bg: #dddee2;
 
-$primary: #155f59;
-$secondary: #e90e66;
-$danger: #dd0000;
-$success: lime;
-$warning: orange;
+$primary: #606362;
+$secondary: #0ebde9;
+$danger: #880a0a;
+$success: rgb(12, 88, 12);
+$warning: rgb(211, 198, 18);
 $info: aqua;
 
 $blue: blue;
@@ -34,5 +34,5 @@ $colors: (
   "cyan": $cyan,
   "white": $white,
   "gray": $gray,
-  "gray-dark": $gray-dark
+  "gray-dark": $gray-dark,
 ) !default;

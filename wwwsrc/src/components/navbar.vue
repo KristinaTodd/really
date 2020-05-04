@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <router-link class="navbar-brand" :to="{ name: 'home' }"
+    <router-link class="navbar-brand primaryFont" :to="{ name: 'home' }"
       ><i class="fas fa-home"></i>Really</router-link
     >
     <button
@@ -14,7 +14,7 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarText">
+    <div class="collapse navbar-collapse secondFont" id="navbarText">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item" :class="{ active: $route.name == 'home' }">
           <router-link :to="{ name: 'home' }" class="nav-link"
@@ -69,4 +69,11 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.primaryFont {
+  font-family: "Playfair Display SC", serif;
+}
+.secondFont {
+  font-family: "Quicksand", sans-serif;
+}
+</style>

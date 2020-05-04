@@ -6,22 +6,22 @@ using Dapper;
 
 namespace Really.Repositories
 {
-  public class HomeRepository
+  public class ProfileRepository
   {
     private readonly IDbConnection _db;
 
-    public HomeRepository(IDbConnection db)
+    public ProfileRepository(IDbConnection db)
     {
       _db = db;
     }
 
-    internal IEnumerable<Home> Get()
+    internal IEnumerable<Profile> Get()
     {
-      string sql = "SELECT * FROM Home";
-      return _db.Query<Home>(sql);
+      string sql = "SELECT * FROM Profile";
+      return _db.Query<Profile>(sql);
     }
 
-    internal Home Create(Home HomeData)
+    internal Profile Create(Profile ProfileData)
     {
       throw new NotImplementedException();
     }

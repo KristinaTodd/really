@@ -5,7 +5,8 @@
 --   username VARCHAR(255) NOT NULL,
 --   phoneNumber INT DEFAULT 0,
 --   email VARCHAR(255) NOT NULL,
---   isAdmin TINYINT
+--   isAdmin TINYINT,
+--   favorites VARCHAR(255) NOT NULL
 -- );
 
 -- CREATE TABLE homes (
@@ -13,15 +14,20 @@
 --     title VARCHAR(255) NOT NULL,
 --     description VARCHAR(255) NOT NULL,
 --     userId VARCHAR(255),
+--     address VARCHAR(255),
+--     city VARCHAR(255),
+--     state VARCHAR(255),
 --     primaryImg VARCHAR(255),
---     secondaryImgs VARCHAR(255),
+--     secondaryImg VARCHAR(255),
+--     baths INT DEFAULT 0,
+--     rooms INT DEFAULT 0,
+--     price INT DEFAULT 0,
 --     views INT DEFAULT 0,
 --     favorite INT DEFAULT 0,
+--     mls INT DEFAULT 0,
 --     INDEX userId (userId),
 --     PRIMARY KEY (id)
 -- );
-
-
 
 -- CREATE TABLE favoriteHome (
 --     id int NOT NULL AUTO_INCREMENT,

@@ -15,17 +15,17 @@ namespace Really.Controllers
   [Route("api/[controller]")]
   public class HomeController : ControllerBase
   {
-    private readonly HomeService _ks;
-    public HomeController(HomeService ks)
+    private readonly HomeService _hs;
+    public HomeController(HomeService hs)
     {
-      _ks = ks;
+      _hs = hs;
     }
     [HttpGet]
     public ActionResult<IEnumerable<Home>> Get()
     {
       try
       {
-        return Ok(_ks.Get());
+        return Ok(_hs.Get());
       }
       catch (Exception e)
       {
@@ -41,7 +41,7 @@ namespace Really.Controllers
       {
         var userId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
         newHome.UserId = userId;
-        return Ok(_ks.Create(newHome));
+        return Ok(_hs.Create(newHome));
       }
       catch (Exception e)
       {
